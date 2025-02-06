@@ -1,14 +1,14 @@
 # What is 'ggdata'?
 
-This repo, 'ggdata' is a *thoroughly unofficial* companion command-line interface (CLI) to the GitGuardian platform tooling ['ggshield'](https://github.com/GitGuardian/ggshield). It is a prototype data exporter that facilitates use cases such as Tableau reporting, custom Honeytoken alerting workflows, and archiving of incident remediation steps.
+This repo, 'ggdata' is a *thoroughly unofficial* companion command-line interface (CLI) to the [GitGuardian](https://www.gitguardian.com/) platform tooling ['ggshield'](https://github.com/GitGuardian/ggshield). It is a prototype data exporter that facilitates use cases such as Tableau reporting, custom Honeytoken alerting workflows, and archiving of incident remediation steps.
 
 # Why does 'ggdata' exist?
 
-This exists as a separate tool from ggshield instead of a fork with additions because A) it is an unofficial utility and B) because the GitGuardian team is extremely skilld, so incorporating it into whatever place in their offerings is purely up to them. This might eventually include their official platform, but likely will remain a separate tool in order to iterate quickly based on user feedback.
+This exists as a separate tool from ggshield instead of a fork with additions because A) it is an unofficial utility and B) because the [GitGuardian](https://www.gitguardian.com/) team is extremely skilld, so incorporating it into whatever place in their offerings is purely up to them. This might eventually include their official platform, but likely will remain a separate tool in order to iterate quickly based on user feedback.
 
 # TL;DR How to use 'ggdata'
 
-By default, ggdata limits reported data to *reasonable* amounts, primarily based on severity and timeframe defaults, since this is the most obvious and requested mode. Only when requested will it dig deeper using other filters in order to remain economical in its use of API calls.
+By default, ggdata limits reported data to *reasonable* amounts, primarily based on severity and timeframe defaults, since this is the most obvious and requested mode. Only when requested will it dig deeper using other filters in order to remain economical in its use of [API](https://api.gitguardian.com/docs) calls.
 
 Note: before you can use ggdata, you must install ggshield AND authenticate successfully.
 
@@ -72,7 +72,7 @@ Example: --before=2019-08-30T14:15:22Z
 
 Example: --after=2019-08-22T14:15:22Z
 
-Note: if before or after parameters are omitted, they do not get passed to the underlying API calls. Thus, for instance, using *--after* alone only produces data AFTER the datetime provided.
+Note: if before or after parameters are omitted, they do not get passed to the underlying [API](https://api.gitguardian.com/docs) calls. Thus, for instance, using *--after* alone only produces data AFTER the datetime provided.
 
 ## Filter by Tags
 
@@ -97,10 +97,10 @@ Even before ggdata is adopted by thousands of teams, there are a few likely impr
 
 # Contributing
 
-If you would like to contribute, first reach out to GitGuardian either through your assign technical account manager, account executive, or sales engineering professional. Unlike a support ticket for issues, your improvement and contribution inquiries can be best routed and addressed through these mechanisms.
+If you would like to contribute, first reach out to [GitGuardian](https://www.gitguardian.com/) either through your assign technical account manager, account executive, or sales engineering professional. Unlike a support ticket for issues, your improvement and contribution inquiries can be best routed and addressed through these mechanisms.
 
 If you still feel like contributing to this repository, fork it then submit a Pull Request (PR) to the upstream origin and our maintainers will take a look at your changes.
 
 # Who is behind ggdata?
 
-The primary contributor, for now, is [Paul Bruce](https://paulsbruce.io) (the current repo owner). Hopefully GitGuardian customers looking to use their platform data will contribute issues, improvements, and feedback to GitGuardian product management. However, it is very likely that this will
+The primary contributor, for now, is [Paul Bruce](https://paulsbruce.io) (the current repo owner). Hopefully [GitGuardian](https://www.gitguardian.com/) customers looking to use their platform data will contribute issues, improvements, and feedback to [GitGuardian](https://www.gitguardian.com/) product management. However, it is very likely that this utility will be donated or integrated into [their](https://github.com/GitGuardian/ggtools) common tool repository.
