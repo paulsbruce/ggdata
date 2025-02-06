@@ -14,11 +14,11 @@ Note: before you can use ggdata, you must install ggshield AND authenticate succ
 
 ## Export Core Incident Data
 
-'''ggdata secret incidents'''
+```ggdata secret incidents```
 
 ## Export Incident Data with Team Perimeter Grouping
 
-'''ggdata secret incidents --include-teams'''
+```ggdata secret incidents --include-teams```
 
 # (Optional) Default Data Format
 
@@ -36,7 +36,7 @@ If you intent to use ggdata for console/command-line human interactions, you can
 
 You can also use built-in templates or specify your own Mustache templates to format the JSON data before the CLI returns output to stdout. To do so, use the --report parameter. For instance:
 
-'''ggdata --report={enum|filepath} secret incidents'''
+```ggdata --report={enum|filepath} secret incidents```
 
 Enum: TABLEAU,GSHEETS,XLSX,XML
 
@@ -52,23 +52,23 @@ Note: Multiple uses of operators are computed from left to right, not grouped by
 
 ## Filter by Status
 
-'''... --status={string||string&&string&&!string}'''
+```... --status={string||string&&string&&!string}```
 
 Enum: IGNORED TRIGGERED ASSIGNED RESOLVED
 
 ## Filter by Severity
 
-'''... --severity={string||string&&string&&!string}'''
+```... --severity={string||string&&string&&!string}```
 
 Enum: critical high medium low info unknown
 
 ## Filter by Date Range
 
-'''... --before={string <datetime>}'''
+```... --before={string <datetime>}```
 
 Example: --before=2019-08-30T14:15:22Z
 
-'''... --after={string <datetime>}'''
+```... --after={string <datetime>}```
 
 Example: --after=2019-08-22T14:15:22Z
 
@@ -76,13 +76,13 @@ Note: if before or after parameters are omitted, they do not get passed to the u
 
 ## Filter by Tags
 
-'''... --tags={string,string,string,...}'''
+```... --tags={string,string,string,...}```
 
 Enum: DEFAULT_BRANCH FROM_HISTORICAL_SCAN CHECK_RUN_SKIP_FALSE_POSITIVE CHECK_RUN_SKIP_LOW_RISK CHECK_RUN_SKIP_TEST_CRED PUBLIC PUBLICLY_EXPOSED PUBLICLY_LEAKED REGRESSION SENSITIVE_FILE TEST_FILE NONE
 
 ## Filter by Detector Group
 
-'''... --detector-group={string}'''
+```... --detector-group={string}```
 
 Example: --detector-group=slackbot_token
 
