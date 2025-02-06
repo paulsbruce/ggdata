@@ -10,6 +10,8 @@ This exists as a separate tool from ggshield instead of a fork with additions be
 
 By default, ggdata limits reported data to *reasonable* amounts, primarily based on severity and timeframe defaults, since this is the most obvious and requested mode. Only when requested will it dig deeper using other filters in order to remain economical in its use of API calls.
 
+Note: before you can use ggdata, you must install ggshield AND authenticate successfully.
+
 ## Export Core Incident Data
 
 '''ggdata secret incidents'''
